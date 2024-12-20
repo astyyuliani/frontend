@@ -1,4 +1,4 @@
-const API_URL = "http://34.44.141.249:3000/v1/"
+const API_URL = "https://api.infokus.my.id/v1/"
 
 const getToken = () => localStorage.getItem("token");
 
