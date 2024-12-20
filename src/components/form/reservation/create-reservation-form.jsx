@@ -3,7 +3,7 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { format, startOfTomorrow } from "date-fns";
+import { format, startOfToday} from "date-fns";
 import { Calendar as CalendarIcon } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
@@ -46,6 +46,7 @@ import { CreateReservationSchema } from "@/schema/reservation-schema";
 import { toast } from "sonner";
 import { transactionService } from "@/services/transaction-service";
 import { ButtonRadio, ButtonRadioItem } from "@/components/ui/button-radio";
+
 
 export default function CreateReservationForm({ categoryPackageId }) {
   const queryClient = useQueryClient();
@@ -231,7 +232,7 @@ export default function CreateReservationForm({ categoryPackageId }) {
   };
 
   const disabledDates = {
-    before: startOfTomorrow(),
+    before: startOfToday(),
   };
 
   return (
@@ -339,7 +340,11 @@ export default function CreateReservationForm({ categoryPackageId }) {
                                     value={time.id.toString()}
                                     id={`time-${time.id}`}
                                     disabled={isDisabled}
-                                    className="data-disabled w-full disabled:opacity-100 data-[disabled]:border-gray-300/60 data-[disabled]:bg-gray-300/60 data-[disabled]:text-black"
+                                    className={cn(
+                                      "w-full",
+                                      isDisabled &&
+                                        "cursor-not-allowed !border-gray-400/60 !bg-gray-400/60 !text-black !opacity-100",
+                                    )}
                                   >
                                     <Label htmlFor={`time-${time.id}`}>
                                       {timeFormat(time.time)}
