@@ -5,7 +5,6 @@ import {
   IoLogoInstagram,
   IoLogoWhatsapp,
 } from "react-icons/io5";
-//test
 
 export default function ContactPage() {
   return (
