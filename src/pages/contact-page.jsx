@@ -1,6 +1,6 @@
 import { ContactCard } from "@/components/_section/contact-card";
 import {
-  IoCall
+  IoCall,
   IoLocation,
   IoLogoInstagram,
   IoLogoWhatsapp,
