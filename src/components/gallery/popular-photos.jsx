@@ -16,7 +16,7 @@ export default function PopularPhotos() {
           className="h-[254px] w-[171.5px] object-cover lg:h-[412px] lg:w-[320px]"
         />
         <img
-          src="/gallery/popular/3.png"
+          src="/gallery/popular/"
           alt="Foto Populer"
           className="h-[254px] w-[171.5px] object-cover lg:h-[412px] lg:w-[320px]"
         />

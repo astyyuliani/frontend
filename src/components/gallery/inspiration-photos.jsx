@@ -21,7 +21,7 @@ export default function InspirationPhotos() {
           className="h-[254px] w-[171.5px] object-cover lg:h-[412px] lg:w-[320px]"
         />
         <img
-          src="/gallery/inspiration/4.png"
+          src="/gallery/inspiration/"
           alt="Foto Populer"
           className="h-[254px] w-[171.5px] object-cover lg:h-[412px] lg:w-[320px]"
         />
