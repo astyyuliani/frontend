@@ -66,7 +66,7 @@ export default function Header() {
               );
             })}
           </ul>
-          <div className="">
+          <div className="hidden items-center gap-5 lg:inline-flex">
             {isLoading && <Spinner className="h-6 w-6" />}
             {!user && (
               <>
@@ -74,7 +74,7 @@ export default function Header() {
                   to="/login"
                   className={cn(
                     buttonVariants({
-                      variant:"line",
+                      // variant:"line",
                       size: "lg",
                     }),
                     "font-bold",
