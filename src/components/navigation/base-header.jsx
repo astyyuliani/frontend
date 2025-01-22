@@ -41,7 +41,7 @@ export default function Header() {
     <header className="sticky top-0 z-40 w-full bg-white">
       <div className="mx-auto h-16 w-full max-w-[1440px] px-4 font-medium lg:h-20 lg:px-20">
         <nav className="inline-flex h-full w-full items-center justify-between">
-          <img src="/logo.png" alt="Logo" className="h-9 lg:h-12" />
+          <img src="/" alt="Logo" className="h-9 lg:h-12" />
           {/* <p className="text-3xl h-3 lg:h-10">Infokus</p> */}
           <ul className="hidden gap-11 lg:inline-flex">
             {links.map((link, index) => {
@@ -66,7 +66,7 @@ export default function Header() {
               );
             })}
           </ul>
-          <div className="hidden items-center gap-5 lg:inline-flex">
+          <div className="">
             {isLoading && <Spinner className="h-6 w-6" />}
             {!user && (
               <>
