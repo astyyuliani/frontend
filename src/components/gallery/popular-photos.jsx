@@ -6,12 +6,12 @@ export default function PopularPhotos() {
       </h2>
       <div className="flex w-full flex-wrap items-center justify-center">
         <img
-          src="/gallery/popular/1.png"
+          src="/gallery/popular/"
           alt="Foto Populer"
           className="h-[254px] w-[171.5px] object-cover lg:h-[412px] lg:w-[320px]"
         />
         <img
-          src="/gallery/popular/2.png"
+          src="/gallery/popular/"
           alt="Foto Populer"
           className="h-[254px] w-[171.5px] object-cover lg:h-[412px] lg:w-[320px]"
         />
@@ -21,7 +21,7 @@ export default function PopularPhotos() {
           className="h-[254px] w-[171.5px] object-cover lg:h-[412px] lg:w-[320px]"
         />
         <img
-          src="/gallery/popular/4.png"
+          src="/gallery/popular/"
           alt="Foto Populer"
           className="h-[254px] w-[171.5px] object-cover lg:h-[412px] lg:w-[320px]"
         />
