@@ -6,7 +6,7 @@ export default function InspirationPhotos() {
       </h2>
       <div className="flex w-full flex-wrap items-center justify-center">
         <img
-          src="/gallery/inspiration/1.png"
+          // src="/gallery/inspiration/1.png"
           alt="Foto Populer"
           className="h-[254px] w-[171.5px] object-cover lg:h-[412px] lg:w-[320px]"
         />
