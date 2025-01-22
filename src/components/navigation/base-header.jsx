@@ -153,7 +153,7 @@ export default function Header() {
                       )}
                       {user.role !== "admin" && (
                         <>
-                          <Link to="/profile">Profil</Link>
+                          <Link to="/">Profil</Link>
                           <Link to="/history">Riwayat</Link>
                         </>
                       )}
@@ -195,7 +195,7 @@ function ProfileMenu() {
                 <Link to="/profile">Profil</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link to="/history">Riwayat</Link>
+                <Link to="/">Riwayat</Link>
               </DropdownMenuItem>
             </>
           )}
